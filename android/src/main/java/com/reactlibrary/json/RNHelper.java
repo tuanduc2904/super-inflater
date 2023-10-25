@@ -13,7 +13,7 @@ public class RNHelper {
             mBody = "{}";
         }
 
-        mWrite.putString("body", mJson);
+        mWrite.putString("body", mBody);
         mWrite.putString("message", "Fetch data success");
 
         return mWrite;
