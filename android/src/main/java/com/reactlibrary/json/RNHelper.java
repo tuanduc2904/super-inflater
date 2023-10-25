@@ -7,6 +7,12 @@ public class RNHelper {
     public static WritableMap jsonToReact(String mJson) {
         WritableMap mWrite = Arguments.createMap();
 
+        // when mJson is null or empty, we need to set it to "{}" to avoid crash with error JSON Parse error: Unrecognized token 'undefined'
+        String mBody = mJson;
+        if (mJson == null || mJson.isEmpty()) {
+            mBody = "{}";
+        }
+
         mWrite.putString("body", mJson);
         mWrite.putString("message", "Fetch data success");
 
