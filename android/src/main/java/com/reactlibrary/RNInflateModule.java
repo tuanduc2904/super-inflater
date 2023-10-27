@@ -33,9 +33,9 @@ public class RNInflateModule extends ReactContextBaseJavaModule {
     this.reactContext = reactContext;
     this.mApiManager = new ApiManager();
     this.mClient = new OkHttpClient.Builder()
-    .connectTimeout(50, TimeUnit.SECONDS)
-    .writeTimeout(50, TimeUnit.SECONDS)
-    .readTimeout(50, TimeUnit.SECONDS)
+    .connectTimeout(30, TimeUnit.SECONDS)
+    .writeTimeout(30, TimeUnit.SECONDS)
+    .readTimeout(30, TimeUnit.SECONDS)
     .build();;
     this.mUtils = new Utils();
   }
