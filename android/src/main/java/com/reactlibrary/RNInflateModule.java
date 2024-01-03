@@ -36,7 +36,7 @@ public class RNInflateModule extends ReactContextBaseJavaModule {
     .connectTimeout(30, TimeUnit.SECONDS)
     .writeTimeout(30, TimeUnit.SECONDS)
     .readTimeout(30, TimeUnit.SECONDS)
-    .build();;
+    .build();
     this.mUtils = new Utils();
   }
 
