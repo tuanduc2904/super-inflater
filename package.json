@@ -26,10 +26,10 @@
   "devDependencies": {},
   "repository": {
     "type": "git",
-    "url": "git@github.com:john-techfox/super-inflater.git"
+    "url": "git@github.com:tuanduc2904/super-inflater.git"
   },
   "bugs": {
-    "url": "https://github.com/john-techfox/super-inflater/issues"
+    "url": "https://github.com/tuanduc2904/super-inflater/issues"
   },
-  "homepage": "https://github.com/john-techfox/super-inflater#readme"
+  "homepage": "https://github.com/tuanduc2904/super-inflater#readme"
 }
