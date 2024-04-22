@@ -19,9 +19,9 @@
   ],
   "license": "ISC",
   "dependencies": {
-    "ramda": "^0.26.1",
-    "superagent": "^5.1.0",
-    "superagent-prefix": "^0.0.2"
+    "ramda": "*",
+    "superagent": "*",
+    "superagent-prefix": "*"
   },
   "devDependencies": {},
   "repository": {
