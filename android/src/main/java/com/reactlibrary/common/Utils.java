@@ -58,7 +58,7 @@ public class Utils {
             mapWrite = mHelper.jsonToReact(validJson);
             mapWrite.putInt("statusCode", res.code());
             WritableMap headersMap = Arguments.createMap();
-            Headers headers = response.headers();
+            Headers headers = res.headers();
             for (String name : headers.names()) {
                 headersMap.putString(name, headers.get(name));
             }
