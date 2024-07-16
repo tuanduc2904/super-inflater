@@ -10,7 +10,7 @@ import java.io.BufferedInputStream;
 import java.io.InputStream;
 import java.util.zip.Inflater;
 import java.util.zip.InflaterInputStream;
-
+import okhttp3.Headers;
 import okhttp3.Response;
 
 public class Utils {
@@ -19,7 +19,8 @@ public class Utils {
     public void Utils() {
         this.mHelper = new RNHelper();
     }
-    private String mZips[] = new String[] {"deflate", "gzip"};
+
+    private String mZips[] = new String[] { "deflate", "gzip" };
 
     private boolean isZipped(Response response) {
         String header = response.header("Content-Encoding");
@@ -56,6 +57,13 @@ public class Utils {
 
             mapWrite = mHelper.jsonToReact(validJson);
             mapWrite.putInt("statusCode", res.code());
+            WritableMap headersMap = Arguments.createMap();
+            Headers headers = response.headers();
+            for (String name : headers.names()) {
+                headersMap.putString(name, headers.get(name));
+            }
+            mapWrite.putMap("headers", headersMap);
+
             return mapWrite;
 
         } catch (Exception e) {
