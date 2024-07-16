@@ -1,6 +1,6 @@
 {
   "name": "rn-super-inflater",
-  "author": "john@techfox.io",
+  "author": "tuanduc2904@gmail.com",
   "version": "1.2.0",
   "description": "## Getting started",
   "main": "index.js",
@@ -15,7 +15,8 @@
     "gzip",
     "super-inflater",
     "inflater",
-    "deflate"
+    "deflate",
+    "rn-super-inflater"
   ],
   "license": "ISC",
   "dependencies": {

@@ -1,15 +1,15 @@
 
-# super-inflater
+# rn-super-inflater
 
 ## Getting started
 
-* `$ npm install super-inflater --save`
+* `$ npm install rn-super-inflater --save`
 OR
-* `$ yarn add super-inflater --save`
+* `$ yarn add rn-super-inflater --save`
 
 ### Mostly automatic installation
 
-`$ react-native link super-inflater`
+`$ react-native link rn-super-inflater`
 
 ### Manual installation
 
@@ -17,7 +17,7 @@ OR
 #### iOS
 
 1. In XCode, in the project navigator, right click `Libraries` ➜ `Add Files to [your project's name]`
-2. Go to `node_modules` ➜ `super-inflater` and add `SuperInflater.xcodeproj`
+2. Go to `node_modules` ➜ `rn-super-inflater` and add `SuperInflater.xcodeproj`
 3. In XCode, in the project navigator, select your project. Add `libSuperInflater.a` to your project's `Build Phases` ➜ `Link Binary With Libraries`
 4. Run your project (`Cmd+R`)<
 
@@ -28,18 +28,18 @@ OR
   - Add `new SuperInflaterPackage()` to the list returned by the `getPackages()` method
 2. Append the following lines to `android/settings.gradle`:
     ```
-    include ':super-inflater'
-    project(':super-inflater').projectDir = new File(rootProject.projectDir,  '../node_modules/super-inflater/android')
+    include ':rn-super-inflater'
+    project(':rn-super-inflater').projectDir = new File(rootProject.projectDir,  '../node_modules/rn-super-inflater/android')
     ```
 3. Insert the following lines inside the dependencies block in `android/app/build.gradle`:
     ```
-      compile project(':super-inflater')
+      compile project(':rn-super-inflater')
     ```
 
 #### Windows
 [Read it! :D](https://github.com/ReactWindows/react-native)
 
-1. In Visual Studio add the `SuperInflater.sln` in `node_modules/super-inflater/windows/SuperInflater.sln` folder to their solution, reference from their app.
+1. In Visual Studio add the `SuperInflater.sln` in `node_modules/rn-super-inflater/windows/SuperInflater.sln` folder to their solution, reference from their app.
 2. Open up your `MainPage.cs` app
   - Add `using Inflate.SuperInflater;` to the usings at the top of the file
   - Add `new SuperInflaterPackage()` to the `List<IReactPackage>` returned by the `Packages` method
@@ -48,7 +48,7 @@ OR
 ## Usage
 ### Import
 ```javascript
-import SuperInflater from 'super-inflater';
+import SuperInflater from 'rn-super-inflater';
 ```
 ### Headers, Params & Body
 * Use `set, query, send` function to set a header, param, body or use `set, query, send` many time to set multiple headers, params, body.
